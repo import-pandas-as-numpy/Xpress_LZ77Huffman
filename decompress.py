@@ -1,4 +1,4 @@
-# This file is Copyright 2022 Forensicxlab and under the GPL v3.0 License.
+# This file is Copyright 2022 Forensicxlab and under the GNU GPLv3 license
 import io, numpy
 
 def encoded_bit_length(data, symbol):
