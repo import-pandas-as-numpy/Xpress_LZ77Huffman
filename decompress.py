@@ -1,5 +1,5 @@
+# This file is Copyright 2022 Forensicxlab and under the GPL v3.0 License.
 import io, numpy
-
 
 def encoded_bit_length(data, symbol):
     if (symbol % 2) == 0:
@@ -55,7 +55,6 @@ def decompress_prefetch(data, out):
     if current_table_entry != 2**15:
         print("The compressed data is not valid.")
         exit(1)
-
 
 
     #Then, it's time to decompress the data
@@ -122,6 +121,5 @@ with open("ATOM.EXE-3A9166E2.pf","rb") as stream:
     decompressed_size = int.from_bytes(stream.read(4),"little")
     stream.seek(0x0008)
     compressed_bytes = stream.read()
-
 out2 = bytearray()
 decompress_prefetch(bytearray(compressed_bytes), out2)
