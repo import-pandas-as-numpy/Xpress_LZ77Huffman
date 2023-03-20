@@ -7,10 +7,11 @@ This python script the implementation of the Xpress decompression algorithm used
 
 The decompression algorithm is implemented into the "decompress_prefetch" function. Feel free to use it to decompress any other data using this compression method.
 
-## Concrete use case
-A prefetch volatility3 plugin using this algorithm is available here : TODO : put the link when the plugin is finished.
+## Use case
+The prefetch volatility3 plugin is using this algorithm: https://www.forensicxlab.com/posts/prefetch/
 
 
 # References
-Pseudo code algorithm : https://winprotocoldoc.blob.core.windows.net/productionwindowsarchives/MS-XCA/%5bMS-XCA%5d.pdf [Section 2.2]
-Prefetch : https://forensicswiki.xyz/wiki/index.php?title=Windows_Prefetch_File_Format#File_header
+- Pseudo code algorithm : https://winprotocoldoc.blob.core.windows.net/productionwindowsarchives/MS-XCA/%5bMS-XCA%5d.pdf [Section 2.2]
+- Prefetch : https://forensicswiki.xyz/wiki/index.php?title=Windows_Prefetch_File_Format#File_header
+- Blog : 
