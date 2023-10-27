@@ -42,8 +42,8 @@ def lz77_huffman_decompress(in_buf):
     decoding_table = [0] * (2**15)
     current_table_entry = 0
     encoded_data = in_buf[0:256]
-    for bit_length in range(1,15):
-        for symbol in range(0, 511):
+    for bit_length in range(1,16):
+        for symbol in range(0, 512):
             if encoded_bit_length(encoded_data, symbol) == bit_length: # If the encoded bit length of symbol equals bit_length
                 entry_count = (1 << (15 - bit_length))
                 for i in range(0, entry_count):
@@ -110,7 +110,7 @@ def lz77_huffman_decompress(in_buf):
                 current_position += 2
                 extra_bit_count += 16
             for _ in range(0, match_length):
-                to_write = out_buf[len(out_buf) - int(match_offset)]
+                to_write = out_buf[(len(out_buf)-1) - int(match_offset)]
                 out_buf.append(to_write)
 
 
