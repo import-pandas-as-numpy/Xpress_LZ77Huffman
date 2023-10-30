@@ -225,3 +225,4 @@ with open("ATOM.EXE-3A9166E2.pf","rb") as stream:
     stream.seek(0x0008)
     compressed_bytes = stream.read()
 out = lz77_huffman_decompress(bytearray(compressed_bytes),decompressed_size)[0]
+
