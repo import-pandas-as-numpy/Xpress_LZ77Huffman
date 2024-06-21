@@ -13,4 +13,3 @@ The prefetch volatility3 plugin is using this algorithm: https://www.forensicxla
 
 # References
 - Pseudo code algorithm : https://winprotocoldoc.blob.core.windows.net/productionwindowsarchives/MS-XCA/%5bMS-XCA%5d.pdf [Section 2.2]
-- Prefetch : https://forensicswiki.xyz/wiki/index.php?title=Windows_Prefetch_File_Format#File_header
